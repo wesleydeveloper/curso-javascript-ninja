@@ -1,3 +1,4 @@
+(() => {
 /*
 Envolva todo o código desse desafio em uma IIFE.
 Crie um arquivo chamado index.html e adicione esse script ao HTML.
@@ -21,7 +22,14 @@ as seguintes características:
   adicionados à idade original (age). Esse método deverá retornar o objeto
   que será instanciado.
 */
-// ?
+function Person(name, lastName, age){
+  this.name = name;
+  this.lastName = lastName;
+  this.age = age;
+  this.getFullName = () => this.name + " " + this.lastName;
+  this.getAge = () => this.age;
+  this.addAge = (age) => this.age += age;
+}
 
 /*
 Crie 3 novos objetos usando o construtor acima. Os objetos serão novas
@@ -29,20 +37,29 @@ pessoas. As variáveis deverão ser o primeiro nome da pessoa. Passe os
 parâmetros corretamente para o construtor para criar as novas pessoas.
 Mostre as 3 novas pessoas criadas no console (Um console.log por pessoa).
 */
-console.log( 'Novas pessoas criadas à partir de Person:' );
+var wesley = new Person("Wesley", "Silva", 27);
+var fernanda = new Person("Fernanda", "Silva", 23);
+var sarah = new Person("Sarah", "Silva", 20);
+console.log( 'Novas pessoas criadas à partir de Person:');
+console.log(wesley);
+console.log(fernanda);
+console.log(sarah);
 // ?
 
 /*
 Mostre no console o nome completo de cada pessoa.
 */
-console.log( '\nNomes das pessoas:' );
+console.log( '\nNomes das pessoas:', wesley.getFullName(),",", fernanda.getFullName(),",", sarah.getFullName() );
 // ?
 
 /*
 Mostre no console as idades de cada pessoa, com a frase:
 - "[NOME COMPLETO] tem [IDADE] anos."
 */
-console.log( '\nIdade das pessoas:' );
+console.log( '\nIdade das pessoas:');
+console.log(wesley.getFullName(), "tem", wesley.getAge(), "anos.");
+console.log(fernanda.getFullName(), "tem", fernanda.getAge(), "anos.");
+console.log(sarah.getFullName(), "tem", sarah.getAge(), "anos.");
 // ?
 
 /*
@@ -51,4 +68,8 @@ cada um. A frase deverá ser no formato:
 - "[NOME COMPLETO] agora tem [NOVA IDADE] anos."
 */
 console.log( '\nNova idade das pessoas:' );
-// ?
+console.log(wesley.getFullName(), "tem", wesley.addAge(2), "anos.");
+console.log(fernanda.getFullName(), "tem", fernanda.addAge(1), "anos.");
+console.log(sarah.getFullName(), "tem", sarah.addAge(2), "anos.");
+
+})();

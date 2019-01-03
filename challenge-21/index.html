@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso Javascript Ninja</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+      <svg class="timer" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 1064 1280">
+        <path d="M447.983-3.35c-6.5 2.3-12.4 7.7-15.5 14.3-1.9 3.8-2 7.1-2 67.3 0 70-.3 66.5 6.7 74.2 6.8 7.6 9.8 8.4 33.1 8.8l20.2.4v51.6l-7.2.7c-104.8 9.6-203.6 49.1-284.1 113.7-5.3 4.3-10.1 7.8-10.5 7.8-.4 0-3.6-2.8-7-6.3l-6.2-6.2 9.1-9c11.4-11.4 13.1-14 13.1-20.9 0-4.1-.6-6.5-2.5-9.8-3.7-6.3-60.4-62.4-64.9-64.3-4.9-2-10.4-1.9-15.3.4s-79.9 77.2-81.4 81.4c-1.6 4-1.3 10.2.4 14.5 2 4.6 57.9 61.1 64.3 64.9 4.8 2.9 13.1 3.4 17.4 1.2 1.2-.6 6.8-5.6 12.3-11l10.1-9.9 5.9 6 5.9 5.9-8.5 8.8c-48.2 50.3-88.6 117.4-113.9 189.5-23.5 66.4-33.2 145.4-27 218.3 13 150.8 89.1 288.2 210.5 379.7 79.9 60.3 173.2 95.8 275.5 105 18.7 1.6 69.3 1.6 88 0 91.4-8.2 173.5-36.6 248-85.7 114.5-75.5 195.5-191.5 226-323.5 20.3-87.7 18.2-178.1-6.2-265.8-13.6-49.2-38.2-102.8-67.3-147.1-34.5-52.5-81.5-101.7-132.5-138.6-57.7-41.8-122.3-71.2-191.5-87.3-23.7-5.6-54.4-10.4-75.2-11.8l-10.3-.7v-51.5l20.3-.4c23.2-.4 26.2-1.2 33-8.8 7-7.7 6.7-4.2 6.7-74.2 0-71 .3-67.5-7.4-75.1-8-7.7-1.9-7.2-89.1-7.4-52.7-.1-79 .2-81 .9zm119.2 296.3c97.1 8.3 185.4 45.2 258.8 108.4 73.2 63 125.4 149.9 145.9 243.1 8.1 36.8 10.1 56.2 10.1 99 0 38-.8 48.9-6.1 79-19.1 109.9-79.7 209.9-168.9 279-57.2 44.3-127 75.2-197.5 87.4-31.1 5.4-40 6.1-79 6.1s-47.9-.7-79-6.1c-111.8-19.4-214.3-82.5-283.1-174.4-48.6-64.8-77.4-137.4-87.6-221-2.6-20.8-2.5-79.3 0-100 8.9-71.7 30.3-132.6 67-191 54.3-86.2 138.2-152.8 234.2-186 59-20.4 124.3-28.7 185.2-23.5z" fill="#d4aa00"/>
+        <text class="timer-text" x="258.985" y="608.682">
+            <tspan x="258.985" y="608.682">Cronometro</tspan>
+        </text>
+        <rect class="timer-btn" width="194.878" height="165.732" x="430.395" y="-4.234" ry="21.532" fill="#d4aa00" data-click="start"/>
+        <rect class="timer-btn" width="139.935" height="132.604" x="-196.857" y="226.42" ry="17.228" transform="matrix(.7115 -.70268 .69792 .71618 0 0)" fill="#d4aa00" data-click="stop"/>
+        <g class="timer-counter">
+            <text y="806.831" x="81.721" transform="translate(131.41)">
+                <tspan y="806.831" x="81.721" data-click="hours">00</tspan>
+            </text>
+            <text y="811.374" x="275" transform="translate(131.41)">
+                <tspan y="811.37445"
+                x="275">:</tspan>
+            </text>
+            <text y="805.665" x="312.102" transform="translate(131.41)">
+                <tspan y="805.665" x="312.102" data-click="minutes">00</tspan>
+            </text>
+            <text y="811.374" x="503" transform="translate(131.41)">
+                <tspan y="811.374" x="503">:</tspan>
+            </text>
+            <text y="805.599" x="537.533" transform="translate(131.41)">
+                <tspan y="805.599" x="537.533" data-click="seconds">00</tspan>
+            </text>
+        </g>
+        <text class="timer-text" x="422.813" y="934.059">
+            <tspan x="422.813" y="934.059" data-click="thousands">0000</tspan>
+        </text>
+        <text class="timer-btn-text start" x="464.138" y="96.96">
+            <tspan x="464.138" y="96.96">Start</tspan>
+        </text>
+        <text class="timer-btn-text stop" x="-158.444" y="317.646" transform="rotate(-41.945)">
+            <tspan x="-158.444" y="317.646">Stop</tspan>
+        </text>
+        <rect class="timer-btn" width="191.09" height="65.213" x="436.455" y="1041.896" ry="11.25" fill="gray" data-click="reset"/>
+        <text class="timer-btn-text reset" x="486.503" y="1087.593">
+            <tspan x="486.503" y="1087.593">Reset</tspan>
+        </text>
+    </svg>
+  </div>
+  <div class="javascript">
+    <script src="./assets/js/challenge-21.js"></script>
+  </div>
+</body>
+
+</html>

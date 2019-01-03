@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Digital";
+  src: url("../fonts/digital-7.ttf") format('truetype');
+}
+
+body {
+  font-family: "Digital" !important;
+}
+
+.container {
+  width: 90%;
+  margin: auto 5%;
+  position: relative;
+
+}
+
+.title {
+  text-align: center;
+}
+
+.timer {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+@media (max-width: 992px) {
+  .timer {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .timer {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media(max-width: 576px) {
+  .timer {
+    width: 100%;
+    margin: unset;
+  }
+}
+
+.timer-btn {
+  cursor: pointer;
+}
+
+.timer-text tspan {
+  font-size: 120px;
+}
+
+.timer-counter {
+  font-size: 200px;
+}
+
+.timer-btn-text {
+  fill: #ffffff;
+}
+
+.timer-btn-text.start {
+  font-size: 56px;
+}
+
+.timer-btn-text.stop {
+  font-size: 48px;
+}
+
+.timer-btn-text.reset {
+  font-size: 40px;
+}

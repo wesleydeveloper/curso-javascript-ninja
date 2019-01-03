@@ -29,7 +29,7 @@ function getArrByIndex(arr, i){
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-var misto = [true, "Bla", 10, {msg:"oi}, ["a", "b"]];
+var misto = [true, "Bla", 10, {msg:"oi"}, ["a", "b"]];
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
